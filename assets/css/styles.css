@@ -23,6 +23,13 @@ ul {
     margin: 0 auto;
 }
 
+.separate {
+    width: 1200px;
+    height: 2px;
+    background-color: #f6f3f3;
+    margin: 44px auto 0;
+}
+
 /* Header */
 
 .header {
@@ -135,7 +142,7 @@ ul {
     margin-left: 4px;
 }
 
-.ratting-left a {
+.ratting-left span {
     color: #9095a0;
     font-size: 14px;
     letter-spacing: 0.6px;
@@ -309,4 +316,90 @@ ul {
 .pricing .btn-add {
     color: #00bdd6;
     border: 1px solid #00bdd6;
+}
+
+/* Reviews */
+.reviews {
+    margin-top: 50px;
+}
+
+.reviews .row-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row-head-left,
+.row-head-right,
+.number-review {
+    display: flex;
+    align-items: center;
+}
+
+.row-head-left,
+.number-review {
+    gap: 4px;
+}
+
+.row-head-right i {
+    margin-left: 14px;
+    font-size: 12px;
+    color: #9095a0;
+    font-weight: 600;
+}
+
+.row-head b {
+    font-size: 14px;
+    margin-left: 4px;
+}
+
+.row-head span {
+    color: #9095a0;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+}
+
+.feed-back {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.feed-back li {
+    margin-top: 30px;
+    width: calc(50% - 60px);
+    margin-right: 60px;
+}
+
+.feed-back .row-user,
+.feed-back .name {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.feed-back .name {
+    gap: 6px;
+}
+
+.feed-back .name span {
+    color: #000;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.feed-back .name .time {
+    color: #a8acb3;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.feed-back .info img {
+    margin-top: 4px;
+}
+
+.feed-back .desc {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #404247;
+    line-height: 20px;
 }
