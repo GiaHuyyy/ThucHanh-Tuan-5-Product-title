@@ -47,8 +47,6 @@ ul {
     color: #565e6c;
 }
 
-.header .nav a:hover {
-}
 .header .nav a:hover,
 .header .nav .active a {
     color: #00bdd6;
@@ -97,4 +95,95 @@ ul {
 .header .search input::placeholder {
     font-size: 14px;
     color: #bcc1ca;
+}
+
+/* Product title */
+
+.product-title {
+    margin-top: 54px;
+}
+
+.product-title .row-nav {
+    display: flex;
+}
+
+.row-nav h4 {
+    margin-right: 6px;
+    color: #9095a0;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.row-nav a:last-child h4{
+    color: #171a1f;
+}
+
+.product-title .heading {
+    margin-top: 16px;
+    font-size: 50px;
+}
+
+.product-title .ratting {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ratting-left b {
+    font-size: 14px;
+    margin-left: 4px;
+}
+
+.ratting-left a {
+    color: #9095a0;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+}
+
+.ratting .ratting-right {
+    gap: 50px;
+}
+
+.ratting .ratting-left,
+.ratting .ratting-right,
+.ratting .ratting-right .share,
+.ratting .ratting-right .heart {
+    display: flex;
+    align-items: center;
+}
+
+.ratting .ratting-right a {
+    color: #171a1f;
+    font-size: 13px;
+    margin-left: 8px;
+}
+
+.ratting .ratting-right i {
+    color: #5b5656;
+}
+
+.ratting .ratting-right img {
+    width: 16px;
+    height: 18px;
+}
+
+.product-title .list-images {
+    margin-top: 16px;
+    display: flex;
+    gap: 28px;
+}
+
+.product-title .img-main img {
+    height: 100%;
+}
+
+.product-title .img-sub {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.product-title .img-sub img {
+    width: calc(50% - 9px);
 }
