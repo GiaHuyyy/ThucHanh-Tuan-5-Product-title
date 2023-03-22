@@ -18,6 +18,12 @@ ul {
     list-style: none;
 }
 
+h1,
+h2,
+h3 {
+    font-weight: 900;
+}
+
 .content {
     width: 1200px;
     margin: 0 auto;
@@ -178,11 +184,17 @@ ul {
 .product-title .list-images {
     margin-top: 16px;
     display: flex;
-    gap: 28px;
+    gap: 30px;
 }
 
 .product-title .img-main img {
     height: 100%;
+    transition: ease 0.3s;
+}
+
+.product-title .img-main img:hover,
+.product-title .img-sub img:hover {
+    box-shadow: 0 0 8px 4px rgba(209, 205, 205, 0.4);
 }
 
 .product-title .img-sub {
@@ -191,8 +203,13 @@ ul {
     gap: 18px;
 }
 
-.product-title .img-sub img {
+.product-title .img-sub a {
     width: calc(50% - 9px);
+}
+
+.product-title .img-sub a img {
+    height: 100%;
+    transition: ease 0.3s;
 }
 
 /* Product description */
@@ -217,8 +234,8 @@ ul {
     margin-top: 26px;
 }
 
-.product-description .list-choise {
-    margin-top: 40px;
+.product-description .list-choice {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -226,12 +243,12 @@ ul {
 .list-choice .row {
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 46px;
     margin-top: 28px;
 }
 
 .list-choice li:last-child .row {
-    gap: 46px;
+    gap: 32px;
 }
 
 .list-choice .row a {
@@ -402,4 +419,64 @@ ul {
     font-size: 15px;
     color: #404247;
     line-height: 20px;
+}
+
+/* Related products */
+.related-products {
+    padding: 46px 0px 56px;
+}
+
+.related-products .row-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.related-products .list {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.related-products .item {
+    border: 1px solid #f4f2f2;
+    transition: ease 0.3s;
+}
+
+.related-products .item:hover {
+    box-shadow: 0 0 8px 4px rgba(209, 205, 205, 0.4);
+}
+
+.related-products .info {
+    margin: 14px 13px 13px;
+}
+
+.related-products .row-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.related-products .title {
+    font-size: 19px;
+}
+
+.related-products .price {
+    display: block;
+    margin-top: 4px;
+    font-size: 16px;
+    font-weight: 900;
+    color: #00bdd6;
+}
+
+.related-products .row-ratting {
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.related-products .row-ratting span {
+    font-size: 12px;
+    color: #9ea3ac;
 }
